@@ -33,10 +33,12 @@ if( ! defined('ABSPATH') ) {
 }
 
 if( ! class_exists( 'MV_Slider' )) {
-  class MV_Clider {
-    function __construct() 
-    {
+  class MV_Slider {
+    function __construct() {
       $this->define_constants();
+
+      require_once( MV_SLIDER_PATH . 'post-types/class.mv-slider-cpt.php');
+      $MV_Slider_Post_Type = new MV_Slider_Post_Type();
     }
     public function define_constants() {
       define( 'MV_SLIDER_PATH', plugin_dir_path( __FILE__ ) );
@@ -45,12 +47,12 @@ if( ! class_exists( 'MV_Slider' )) {
     }
 
     public static function activate() {
-      // flush_rewrite_rules();
       update_option('rewrite_rules', '');
     }
 
     public static function deactivate() {
       flush_rewrite_rules();
+      unregister_post_type('mv-slider');
     }
 
     public static function uninstall() {
@@ -63,5 +65,5 @@ if (class_exists('MV_Slider')) {
   register_activation_hook( __FILE__, array('MV_Slider','activate'));
   register_deactivation_hook( __FILE__, array('MV_Slider','deactivate'));
   register_uninstall_hook( __FILE__, array('MV_Slider','uninstall'));
-  $mv_slider = new MV_Clider();
+  $mv_slider = new MV_Slider();
 }
