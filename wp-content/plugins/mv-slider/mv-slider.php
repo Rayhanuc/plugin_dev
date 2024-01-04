@@ -41,6 +41,9 @@ if( ! class_exists( 'MV_Slider' )) {
 
       require_once( MV_SLIDER_PATH . 'post-types/class.mv-slider-cpt.php');
       $MV_Slider_Post_Type = new MV_Slider_Post_Type();
+
+			require_once (MV_SLIDER_PATH . 'class.mv-slider-settings.php');
+			$MV_Slider_settings = new MV_Slider_settings();
     }
     public function define_constants() {
       define( 'MV_SLIDER_PATH', plugin_dir_path( __FILE__ ) );
