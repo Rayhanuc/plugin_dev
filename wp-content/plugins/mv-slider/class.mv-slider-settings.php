@@ -6,12 +6,12 @@ if (! class_exists('MV_Slider_settings')) {
 		public static $options;
 
 		public function __construct() {
-			self::$options = get_options('mv_slider_options');
+			self::$options = get_option('mv_slider_options');
 			add_action('admin_init', array($this, 'admin_init'));
 		}
 
 		public function admin_init(): void {
-            register_setting( 'mv_slider_group', 'mv_slider_options');
+            register_setting( 'mv_slider_group', 'mv_slider_options', array($this, 'mv_slider_validate'));
 
 			add_settings_section(
 				'mv_slider_main_section',
@@ -128,6 +128,27 @@ if (! class_exists('MV_Slider_settings')) {
         </select>
 
             <?php
+        }
+
+        public function mv_slider_validate($input) {
+            $new_input = array();
+            foreach($input as $key => $value) {
+//                $new_input[$key] = sanitize_text_field($value);
+              switch ($key) {
+                case 'mv_slider_title':
+                    if (empty($value)) {
+                        $value = 'Please, type some text';
+                    }
+                    $new_input[$key] = sanitize_text_field($value);
+                    break;
+                default:
+                    $new_input[$key] = sanitize_text_field($value);
+                    break;
+
+              }
+            }
+
+            return $new_input;
         }
 	}
 }
