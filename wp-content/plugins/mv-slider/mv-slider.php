@@ -45,10 +45,10 @@ if( ! class_exists( 'MV_Slider' )) {
 			require_once (MV_SLIDER_PATH . 'class.mv-slider-settings.php');
 			$MV_Slider_settings = new MV_Slider_settings();
 
-			if (file_exists('class.mv-shortcode.php')) {
-				require_once( MV_SLIDER_PATH . 'shortcodes/class.mv-shortcode.php');
-				$MV_Slider_Shortcode = new MV_Slider_Shortcode();
-			}
+//			require_once(MV_SLIDER_PATH . 'shortcodes/class.mv-slider-shortcode.php');
+			require_once(MV_SLIDER_PATH . 'shortcodes/class.mv-shortcode.php');
+	    $MV_Slider_Shortcode = new MV_Slider_Shortcode();
+
     }
     public function define_constants() {
       define( 'MV_SLIDER_PATH', plugin_dir_path( __FILE__ ) );

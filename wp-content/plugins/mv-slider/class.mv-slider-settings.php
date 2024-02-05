@@ -73,7 +73,7 @@ if (! class_exists('MV_Slider_settings')) {
 			);
 		}
 
-		public function mv_slider_shortcode_callback() {
+		public function mv_slider_shortcode_callback($args) {
 			?>
 			    <span>Use this shortcode [mv_slider] to display the slider in any page/post/widget</span>
             <?php
