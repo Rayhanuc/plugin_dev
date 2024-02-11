@@ -1,9 +1,7 @@
 <?php
     $meta = get_post_meta($post->ID);
-//    var_dump($meta);
     $link_text = get_post_meta($post->ID, 'mv_slider_link_text', true);
     $link_url = get_post_meta($post->ID, 'mv_slider_link_url', true);
-//    var_dump($link_text, $link_url);
 ?>
 
 <table class="form-table mv-slider-metabox">

@@ -1,9 +1,8 @@
-<h3><?php echo ( !  empty ($content)) ? esc_html($content) : esc_html(MV_Slider_settings::$options['mv_slider_title']);?></h3>
+<h3><?php echo ( !  empty ( $content ) ) ? esc_html( $content ) : esc_html( MV_Slider_settings::$options['mv_slider_title'] ); ?></h3>
 <div class="mv-slider flexslider">
 	<ul class="slides">
         <?php
-
-        $args = array(
+        $args    = array(
           'post_type' => 'mv-slider',
           'post_status' => 'publish',
           'post__in' => $id,
@@ -13,7 +12,6 @@
         $my_query = new WP_Query( $args );
         if ( $my_query->have_posts() ) :
           while( $my_query->have_posts() ) : $my_query->the_post();
-
             $button_text = get_post_meta(get_the_ID(), 'mv_slider_link_text', true);
             $button_url = get_post_meta(get_the_ID(), 'mv_slider_link_url', true);
         ?>
@@ -26,8 +24,8 @@
 							<h2><?php esc_html(the_title()); ?></h2>
 						</div>
 						<div class="slider-description">
-							<div class="subtitle"><?php esc_html(the_content()); ?>></div>
-							<a href="<?php echo esc_attr($button_url); ?>" class="link"><?php esc_html( $button_text ); ?>></a>
+							<div class="subtitle"><?php esc_html(the_content()); ?></div>
+							<a href="<?php echo esc_attr($button_url); ?>" class="link"><?php esc_html( $button_text ); ?></a>
 						</div>
 					</div>
 				</div>

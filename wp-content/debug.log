@@ -18,3 +18,56 @@
 [09-Feb-2024 21:15:29 UTC] PHP Notice:  Undefined offset: 2 in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 3643
 [09-Feb-2024 21:15:29 UTC] PHP Notice:  Undefined offset: 3 in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 3643
 [09-Feb-2024 21:15:29 UTC] PHP Notice:  Undefined offset: 4 in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 3643
+[10-Feb-2024 22:06:40 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, int given in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:06:40 UTC] PHP Warning:  implode(): Invalid arguments passed in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:06:40 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publi' at line 3 for query 
+					SELECT SQL_CALC_FOUND_ROWS  pldev_posts.ID
+					FROM pldev_posts 
+					WHERE 1=1  AND pldev_posts.ID IN () AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publish'))
+					
+					ORDER BY pldev_posts.post_date DESC
+					LIMIT 0, 10
+				 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/twentynineteen/index.php'), get_template_part, locate_template, load_template, require('/themes/twentynineteen/template-parts/content/content.php'), the_content, apply_filters('the_content'), WP_Hook->apply_filters, do_shortcode, preg_replace_callback, do_shortcode_tag, MV_Slider_Shortcode->add_shortcode, require('/plugins/mv-slider/views/mv-slider_shortcode.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[10-Feb-2024 22:06:40 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, int given in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:06:40 UTC] PHP Warning:  implode(): Invalid arguments passed in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:06:40 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publi' at line 3 for query 
+					SELECT SQL_CALC_FOUND_ROWS  pldev_posts.ID
+					FROM pldev_posts 
+					WHERE 1=1  AND pldev_posts.ID IN () AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publish'))
+					
+					ORDER BY pldev_posts.post_date DESC
+					LIMIT 0, 10
+				 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/twentynineteen/index.php'), get_template_part, locate_template, load_template, require('/themes/twentynineteen/template-parts/content/content.php'), the_content, apply_filters('the_content'), WP_Hook->apply_filters, do_shortcode, preg_replace_callback, do_shortcode_tag, MV_Slider_Shortcode->add_shortcode, require('/plugins/mv-slider/views/mv-slider_shortcode.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[10-Feb-2024 22:07:00 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, int given in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:07:00 UTC] PHP Warning:  implode(): Invalid arguments passed in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:07:00 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publi' at line 3 for query 
+					SELECT SQL_CALC_FOUND_ROWS  pldev_posts.ID
+					FROM pldev_posts 
+					WHERE 1=1  AND pldev_posts.ID IN () AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publish'))
+					
+					ORDER BY pldev_posts.post_date DESC
+					LIMIT 0, 10
+				 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/twentynineteen/index.php'), get_template_part, locate_template, load_template, require('/themes/twentynineteen/template-parts/content/content.php'), the_content, apply_filters('the_content'), WP_Hook->apply_filters, do_shortcode, preg_replace_callback, do_shortcode_tag, MV_Slider_Shortcode->add_shortcode, require('/plugins/mv-slider/views/mv-slider_shortcode.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[10-Feb-2024 22:07:00 UTC] PHP Warning:  array_map(): Expected parameter 2 to be an array, int given in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:07:00 UTC] PHP Warning:  implode(): Invalid arguments passed in /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-query.php on line 2201
+[10-Feb-2024 22:07:00 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publi' at line 3 for query 
+					SELECT SQL_CALC_FOUND_ROWS  pldev_posts.ID
+					FROM pldev_posts 
+					WHERE 1=1  AND pldev_posts.ID IN () AND pldev_posts.post_type = 'mv-slider' AND ((pldev_posts.post_status = 'publish'))
+					
+					ORDER BY pldev_posts.post_date DESC
+					LIMIT 0, 10
+				 made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), include('/themes/twentynineteen/index.php'), get_template_part, locate_template, load_template, require('/themes/twentynineteen/template-parts/content/content.php'), the_content, apply_filters('the_content'), WP_Hook->apply_filters, do_shortcode, preg_replace_callback, do_shortcode_tag, MV_Slider_Shortcode->add_shortcode, require('/plugins/mv-slider/views/mv-slider_shortcode.php'), WP_Query->__construct, WP_Query->query, WP_Query->get_posts
+[11-Feb-2024 17:55:29 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Query could not be converted to string in /Applications/AMPPS/www/plugindevelopment/wp-content/plugins/mv-slider/views/mv-slider_shortcode.php:17
+Stack trace:
+#0 /Applications/AMPPS/www/plugindevelopment/wp-content/plugins/mv-slider/shortcodes/class.mv-shortcode.php(25): require()
+#1 /Applications/AMPPS/www/plugindevelopment/wp-includes/shortcodes.php(433): MV_Slider_Shortcode->add_shortcode(Array, '', 'mv_slider')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 /Applications/AMPPS/www/plugindevelopment/wp-includes/shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(mv_sli...', 'do_shortcode_ta...', '[mv_slider]\n')
+#4 /Applications/AMPPS/www/plugindevelopment/wp-includes/class-wp-hook.php(324): do_shortcode('[mv_slider]\n')
+#5 /Applications/AMPPS/www/plugindevelopment/wp-includes/plugin.php(205): WP_Hook->apply_filters('[mv_slider]\n', Array)
+#6 /Applications/AMPPS/www/plugindevelopment/wp-includes/post-template.php(256): apply_filters('the_content', '<!-- wp:shortco. in /Applications/AMPPS/www/plugindevelopment/wp-content/plugins/mv-slider/views/mv-slider_shortcode.php on line 17
+[11-Feb-2024 19:15:11 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /Applications/AMPPS/www/plugindevelopment/wp-content/plugins/mv-slider/post-types/class.mv-slider-cpt.php on line 99
+[11-Feb-2024 19:15:11 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /Applications/AMPPS/www/plugindevelopment/wp-content/plugins/mv-slider/post-types/class.mv-slider-cpt.php on line 99
+[11-Feb-2024 19:16:17 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /Applications/AMPPS/www/plugindevelopment/wp-content/plugins/mv-slider/post-types/class.mv-slider-cpt.php on line 99
+[11-Feb-2024 19:16:17 UTC] PHP Warning:  define() expects at least 2 parameters, 1 given in /Applications/AMPPS/www/plugindevelopment/wp-content/plugins/mv-slider/post-types/class.mv-slider-cpt.php on line 99
